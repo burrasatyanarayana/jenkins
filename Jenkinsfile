@@ -19,4 +19,11 @@ pipeline {
                 // Add test commands here, e.g., npm test for a Node.js project
             }
         }
-        stage('
+        stage('Deploy') {
+            steps {
+                sh 'echo "Deploying the project..."'
+                // Add deploy commands here
+            }
+        }
+    }
+}
